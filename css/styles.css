@@ -6,3 +6,6 @@ body {
 h1 {
   font-family: Princess'Sofia';
 }
+p,.contacts {
+  text-align: center;
+}

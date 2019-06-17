@@ -26,16 +26,16 @@
    <tr>
        <td>Enter Your Name</td>
        <td>["John Onyango"]</td>
-       <td>Your name</td>
+       <td>John Onyango</td>
    </tr>
    <tr>
        <td>Enter Your Location</td>
        <td>["Kampala"]</td>
-       <td>Location</td>
+       <td>Locattion = 'Kampala'</td>
    </tr>
    <tr>
        <td>Submit</td>
-       <td>Email && Message</td>
+       <td>Output message</td>
        <td>Dear John Onyango of email "..." from "...", we have received your message!.</td>
    </tr>
 

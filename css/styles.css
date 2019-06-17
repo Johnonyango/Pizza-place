@@ -6,7 +6,7 @@ body {
 h1 {
   font-family: Princess'Sofia';
   color: olive;
-  font-family: 'Faster One', cursive;
+  font-family: 'Monoton', cursive;
   padding-bottom: 2em;
 
 }
@@ -14,6 +14,9 @@ p,.contacts {
   text-align: center;
 }
 .img-fluid {
-  position: absolute;
-  opacity: 0.3;
+  position: relative;
+}
+p {
+font-family: 'Racing Sans One', cursive;
+font-size: 20px;
 }

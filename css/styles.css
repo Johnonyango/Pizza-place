@@ -9,6 +9,7 @@ h1 {
   font-family: 'Monoton', cursive;
   padding-bottom: 2em;
   margin-top: 20px;
+  font-size: bolder;
 
 }
 p,.contacts {
@@ -20,4 +21,8 @@ p,.contacts {
 p {
 font-family: 'Racing Sans One', cursive;
 font-size: 20px;
+}
+nav a {
+  color: black;
+  font-weight: bolder;
 }

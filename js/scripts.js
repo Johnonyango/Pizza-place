@@ -36,10 +36,10 @@ function jonteez(){
 //       this.Gluttenfree = 1200;
 //       }
 //       function Toppings(Pepperoni,<div class="row">
-      <div class="col-md">
-      <img src="https://s24667.pcdn.co/wp-content/uploads/2017/05/Naples-Pizza-Guide-Daryl-Eats-at-Da-Michele.jpg" alt="">
-    </div>
-  </div>Sausage,Bacon){
+//       <div class="col-md">
+//       <img src="https://s24667.pcdn.co/wp-content/uploads/2017/05/Naples-Pizza-Guide-Daryl-Eats-at-Da-Michele.jpg" alt="">
+//     </div>
+//   </div>Sausage,Bacon){
 //       this.Pepperoni = 500;
 //       this.Sausage = 850;
 //       this.Bacon = 1200;
@@ -52,21 +52,18 @@ function jonteez(){
 //         return this.PizzaSize + this.Crust + this.Toppings + this.Deliver;
 //   }
 // }
-
-  
-
+//
+//
+//
 //   $(document).ready(function() {
 //     $("#charge").submit(function(event) {
 //       event.preventDefault();
-  
+//
 //       var inputtedPizzaSize = $("#pizzaSize").val();
 //       var inputtedToppings = $("#toppings").val();
 //       var inputtedCrust = $("#crust").val();
 //       var inputtedDeliver = $("#deliver").val();
-  
+//
 //       var totalCharge = new Charge(inputtedPizzaSize, inputtedToppings,inputtedCrust,inputtedDeliver);
 //     });
-//     $("#btn").click(function(){
-//       $(".label").hide();
-//   });
 //   });

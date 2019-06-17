@@ -1,24 +1,8 @@
-// var sizes = ["large", "medium", "small"]
-// var crust = ["thin", "flatBread","thick""cripsy","Stuffed", "glutenFree"]
-// var toppings = ["pepperoni","sausage","bacon", "extraCheese"]
+function totalPrice(pizzaSize,toppings,crust,deliver) {
+  var pizzaSize =parseFloat(document.getElementById("pizzaSize").value);
+  var toppings =parseFloat(document.getElementById("toppings").value);
+  var crust =parseFloat(document.getElementById("crust").value);
+  var deliver =parseFloat(document.getElementById("deliver").value);
 
-// $("document").ready(function(){
-//   $(".btn").click(function(){
-//   alert("Enter your location here")  
-//   });
-// });
-
-document.getElementById("#pizza-size");
-document.getElementById("#toppings");
-document.getElementById("#crust");
-document.getElementById("#deliver");
-document.getElementById("#charge");
-document.getElementById("#place");
-document.getElementById("#remove");
-
-$(document).ready(function(){
-  $("")
-});
-
-
-
+  return pizzaSize + toppings +crust + deliver
+}

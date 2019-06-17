@@ -35,7 +35,11 @@ function jonteez(){
 //       this.Stuffed = 850;
 //       this.Gluttenfree = 1200;
 //       }
-//       function Toppings(Pepperoni,Sausage,Bacon){
+//       function Toppings(Pepperoni,<div class="row">
+      <div class="col-md">
+      <img src="https://s24667.pcdn.co/wp-content/uploads/2017/05/Naples-Pizza-Guide-Daryl-Eats-at-Da-Michele.jpg" alt="">
+    </div>
+  </div>Sausage,Bacon){
 //       this.Pepperoni = 500;
 //       this.Sausage = 850;
 //       this.Bacon = 1200;

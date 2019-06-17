@@ -8,8 +8,12 @@ h1 {
   color: olive;
   font-family: 'Faster One', cursive;
   padding-bottom: 2em;
- 
+
 }
 p,.contacts {
   text-align: center;
+}
+.img-fluid {
+  position: absolute;
+  opacity: 0.3;
 }

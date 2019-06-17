@@ -34,6 +34,7 @@ function Charge(size, crust, topping,delivery) {
  var topping = ["Pepperoni", "Chicken", "Bacon", "Onions", "Mushrooms"];
  var delivery = ["deliver", "dont-deliver"]
  
+//  Business logic
  Charge.prototype.totalPrice = function () {
   if (this.size === pizzaSizes["small"]) {
     this.price += 1000;
@@ -58,7 +59,7 @@ function Charge(size, crust, topping,delivery) {
   } else if (this.topping === topping["Onions"]) {
     this.price += 50;
   }else if (this.topping === topping["Mushrooms"]) {
-    this.price += 50;
+    this.price += 70;
   }
   if (this.delivery === delivery["dont-deliver"]) {
     this.price += 0;
@@ -67,6 +68,29 @@ function Charge(size, crust, topping,delivery) {
   }
   return this.price;
  }
+
+ Placeorder.prototype.totalCost = function () {
+  var shoppingCartTotal = 0;
+  for (var order = 0; order < totalOrderPrice.length; order++) {
+    shoppingCartTotal += totalOrderPrice[order];
+  }
+  return shoppingCartTotal;
+ }
+ $(document).ready(function () {
+  $("input#cost").click(function (event) {
+    event.preventDefault();
+    var sizes = $("select#Sizes").val();
+    var crusts = $("select#crust").val();
+    var toppings = $("select#topping").val();
+    var newPizzauser = new Placeorder(sizes, crusts, toppings);
+    newPizzauser.costOfPizza();
+    totalOrderPrice.push(newPizzauser.price);
+    $("#type").text("pizza :" + sizes);
+    $("#typ").text("crusts  :" + crusts);
+    $("#ty").text("topping  :" + toppings);
+    $("#t").text("total cost  :" + newPizzauser.totalCost());
+  });
+ });
  
 
  

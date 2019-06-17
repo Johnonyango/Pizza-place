@@ -4,6 +4,7 @@ function jonteez(){
   var name = document.getElementById("name").value;
   var location = document.getElementById("location").value;
 
+  // business logic
   if (email.length < 10) {
     alert("email invalid!");
   }
@@ -18,52 +19,54 @@ function jonteez(){
   }
 };
 
-// var yourcharge = function() {
-//   var email = document.getElementById("email").value
-//   var name = document.getElementById("name").value;
-//   var location = document.getElementById("location").value;
-//   var location = document.getElementById("location").value;
+// User interface
+function Charge(size, crust, topping,delivery) {
+  this.size = size;
+  this.crust = crust;
+  this.topping = topping;
+  this.delivery = delivery
+  this.price = 0;
+ }
+ var totalCharge = [];
+ 
+ var pizzaSizes = ["small", "medium", "large"];
+ var crust = ["Crispy", "Stuffed", "Gluten-free"];
+ var topping = ["Pepperoni", "Chicken", "Bacon", "Onions", "Mushrooms"];
+ var delivery = ["deliver", "dont-deliver"]
+ 
+ Charge.prototype.totalPrice = function () {
+  if (this.size === pizzaSizes["small"]) {
+    this.price += 1000;
+  } else if (this.size === pizzaSizes["medium"]) {
+    this.price += 1500;
+  } else if (this.size === pizzaSizes["large"]) {
+    this.price += 2500;
+  }
+  if (this.crust === crust["Cripsy"]) {
+    this.price += 100;
+  } else if (this.cheese === crust["Stuffed"]) {
+    this.price += 150;
+  } else if (this.cheese === crust["Gluten-free"]) {
+    this.price += 200;
+  }
+  if (this.topping === topping["Pepperoni"]) {
+    this.price += 100;
+  } else if (this.topping === topping["Chicken"]) {
+    this.price += 200;
+  } else if (this.topping === topping["Bacon"]) {
+    this.price += 300;
+  } else if (this.topping === topping["Onions"]) {
+    this.price += 50;
+  }else if (this.topping === topping["Mushrooms"]) {
+    this.price += 50;
+  }
+  if (this.delivery === delivery["dont-deliver"]) {
+    this.price += 0;
+  }else if (this.deliver === delivery["deliver"]) {
+    this.price += 200;
+  }
+  return this.price;
+ }
+ 
 
-// function Charge(PizzaSize,Crust,Toppings,Deliver) {
-//     function PizzaSize(large,medium,small){
-//       this.large = 3500;
-//       this.medium = 2500;
-//       this.small =1500;
-//       }
-//       function Crust(Cripsy,Stuffed,Gluttenfree){
-//       this.Cripsy = 500;
-//       this.Stuffed = 850;
-//       this.Gluttenfree = 1200;
-//       }
-//       function Toppings(Pepperoni,<div class="row">
-//       <div class="col-md">
-//       <img src="https://s24667.pcdn.co/wp-content/uploads/2017/05/Naples-Pizza-Guide-Daryl-Eats-at-Da-Michele.jpg" alt="">
-//     </div>
-//   </div>Sausage,Bacon){
-//       this.Pepperoni = 500;
-//       this.Sausage = 850;
-//       this.Bacon = 1200;
-//       }
-//       function Deliver(delivery,nodelivery){
-//       this.delivery = 500;
-//       this.nodelivery = 0;
-//       }
-//       Charge.prototype.totalCharge = function() {
-//         return this.PizzaSize + this.Crust + this.Toppings + this.Deliver;
-//   }
-// }
-//
-//
-//
-//   $(document).ready(function() {
-//     $("#charge").submit(function(event) {
-//       event.preventDefault();
-//
-//       var inputtedPizzaSize = $("#pizzaSize").val();
-//       var inputtedToppings = $("#toppings").val();
-//       var inputtedCrust = $("#crust").val();
-//       var inputtedDeliver = $("#deliver").val();
-//
-//       var totalCharge = new Charge(inputtedPizzaSize, inputtedToppings,inputtedCrust,inputtedDeliver);
-//     });
-//   });
+ 

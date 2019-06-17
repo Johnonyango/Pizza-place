@@ -4,7 +4,7 @@
 ## Description
 {This Pizza project is a web app that enables the customers to make their orders online and make even enter their email, name and location if they require delivery services.. }
 ## Setup/Installation Requirements
-* clone to link 
+* clone to link  https://github.com/Johnonyango/Pizza-place.git 
 * cd Delani-studio to your directory
 * double check
 * open with your browser
@@ -36,7 +36,7 @@
    <tr>
        <td>Submit</td>
        <td>Output message</td>
-       <td>Dear John Onyango of email "..." from "...", we have received your message!.</td>
+       <td>Dear John Onyango of email " j.yayah7@gmail.com" from "Kampala", we have received your message and will get back shortly!.</td>
    </tr>
 
 </table>

@@ -39,7 +39,7 @@
       var inputtedDeliver = $("#deliver").val();
   
       var totalCharge = new Charge(inputtedPizzaSize, inputtedToppings,inputtedCrust,inputtedDeliver);
-  
-      $("ul#contacts").append(class = "label" + newContact.totalCharge());
     });
+    $("#btn").click(function(){
+      $(".label").hide();
   });

@@ -6,7 +6,7 @@
 
   function Charge(PizzaSize,Crust,Toppings,Deliver) {
     function PizzaSize(large,medium,small){
-      this.large = 35000;
+      this.large = 3500;
       this.medium = 2500;
       this.small =1500;
       }

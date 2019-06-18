@@ -27,52 +27,58 @@
     <br><br>
 
     <div class="row">
-      <div class="col-md-3" id="pizzaSize">
+      <div class="col-md-3">
         <h2>Pizza Size</h2>
-        <input type="radio" name="Size" value="large"> Large
-        <input type="radio" name="Size" value="medium"> Medium
-        <input type="radio" name="Size" value="small">Small
+        <select id="pizzaSize" class="" name="">
+          <option value="choose">Choose size</option>
+          <option value="large">Large</option>
+          <option value="medium">Medium</option>
+          <option value="small">Small</option>
+        </select>
 
       </div>
-      <div class="col-md-3" id="crust">
+      <div class="col-md-3">
         <h2>Crust</h2>
-        <select class="" name="">
-          <option value="">Cripsy</option>
-          <option value="">Stuffed</option>
-          <option value="">Gluten-free</option>
+        <select id="crust" class="" name="">
+          <option value="">Choose</option>
+          <option value="Cripsy">Cripsy</option>
+          <option value="Stuffed">Stuffed</option>
+          <option value="Gluten-free">Gluten-free</option>
         </select>
       </div>
-      <div class="col-md-3" id="toppings">
+      <div class="col-md-3">
         <h2>Topping</h2>
-        <select class="" name="">
-          <option value="">Pepperoni</option>
-          <option value="">Sausage</option>
-          <option value="">Bacon</option>
-          <option value="">Mushrooms</option>
-          <option value="">Onions</option>
+        <select id="toppings" class="" name="">
+          <option value="">Choose</option>
+          <option value="Pepperoni">Pepperoni</option>
+          <option value="Sausage">Sausage</option>
+          <option value="Bacon">Bacon</option>
+          <option value="Mushrooms">Mushrooms</option>
+          <option value="Onions">Chicken</option>
         </select>
       </div>
-      <div class="col-md-3" id="deliver">
+      <div class="col-md-3">
         <h2>Need Delivery?</h2>
-        <select class="" name="">
+        <select  class="" name="" id="deliver">
+          <option value="">Choose</option>
           <option value="">Yes, I need it delivered</option>
           <option value="">No,Thanks</option>
         </select>
       </div>
     </div>
-    <br><br><br>
-    <div class="row" id="charge">
-      <button id="btn">Total Charge</button>
-      <input class="label" type="text" name="" value="">
-      <br><br>
+    <br><br>
+    <div class="col-md" id="total">
+      <input type="submit" id="cost" value="Submit">
+      <h1 id="t"></h1>
     </div>
     <br><br>
-    <div class="row" id="place">
-      <div class="col-md-2">
-        <button class="bg-muted " type="button" name="button">Place Order</button>
-      </div>
-      <div class="col-md-2" id="remove">
-        <button class="bg-muted" type="button" name="button">Remove Order</button>
+    <div class="row">
+      <h2><span style="font-style:bolder;">For quick delivery, enter you location and address here:</span></h2>
+      <div class="col-md-4">
+        <input placeholder="email" id="email" type="text">
+        <input placeholder="name" id="name" type="text">
+        <input placeholder="location" id="location" type="text">
+        <button type="submit" onclick="jonteez();">Submit</button>
       </div>
     </div>
 
@@ -91,15 +97,6 @@
         <br>
       </div>
     </div>
-    <div class="row">
-      <h2><span style="font-style:bolder;">For quick delivery, enter you location and address here:</span></h2>
-      <div class="col-md-4">
-        <input placeholder="email" id="email" type="text">
-        <input placeholder="name" id="name" type="text">
-        <input placeholder="location" id="location" type="text">
-        <button type="submit" onclick="jonteez();">Submit</button>
-      </div>
-    </div>
     <br><br><br>
     <div class="row">
       <div class="col-4">
@@ -115,5 +112,7 @@
   </div>
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>

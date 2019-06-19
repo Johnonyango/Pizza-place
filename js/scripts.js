@@ -38,7 +38,7 @@ function Charge(size, crust, topping,delivery) {
  Charge.prototype.totalPrice = function () {
   if (this.size === pizzaSizes["small"]) {
     this.price += 750;
-  } else if (this.size === pizzaSizes["medium"]) {
+  } if (this.size === pizzaSizes["medium"]) {
     this.price += 1000;
   } else if (this.size === pizzaSizes["large"]) {
     this.price += 1500;
@@ -84,7 +84,7 @@ Charge.prototype.totalCost = function () {
     var sizes = $("select#PizzaSizes").val();
     var crusts = $("select#crust").val();
     var toppings = $("select#toppings").val();
-    var delivery = $("select#deliver").val();
+    var deliver = $("select#deliver").val();
 
     var newPrice = new Charge(sizes, crusts, toppings);
     newPrice.totalPrice();

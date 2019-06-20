@@ -32,7 +32,6 @@ nav a {
 marquee h1 {
   text-align: center;
 }
-/* #pizzaSize {
-  display: flex;
-  flex-direction: column;
-} */
+footer {
+  color: olive;
+}
